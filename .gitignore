@@ -1,3 +1,5 @@
 *.zip
 .claude/
 SITE-DETAILS.md
+
+.vercel

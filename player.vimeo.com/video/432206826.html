@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+    <link rel="canonical" href="https://player.vimeo.com/video/432206826">
+    <meta name="googlebot" content="noindex,indexifembedded">
+
+
+    <title>Bradley&#39;s 150th Anniversary: Celebrating the Past, Focusing on the Future on Vimeo</title>
+    <style>
+        body,
+        html,
+        .player,
+        .fallback {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fallback {
+            background-color: transparent;
+        }
+
+        .player.loading {
+            opacity: 0;
+        }
+
+        .fallback iframe {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link rel="modulepreload" href="https://f.vimeocdn.com/p/4.46.43/js/player.module.js" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://f.vimeocdn.com/p/4.46.43/js/vendor.module.js" crossorigin="anonymous">
+    <link rel="preload" href="https://f.vimeocdn.com/p/4.46.43/css/player.css" as="style">
+</head>
+
+<body>
+
+
+    <div class="vp-placeholder">
+        <style>
+            .vp-placeholder,
+            .vp-placeholder-thumb,
+            .vp-placeholder-thumb::before,
+            .vp-placeholder-thumb::after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .vp-placeholder {
+                visibility: hidden;
+                width: 100%;
+                max-height: 100%;
+                height: calc(1080 / 1920 * 100vw);
+                max-width: calc(1920 / 1080 * 100vh);
+                margin: auto;
+            }
+
+            .vp-placeholder-carousel {
+                display: none;
+                background-color: #000;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -60px;
+                height: 60px;
+            }
+        </style>
+
+
+
+
+        <style>
+            .vp-placeholder-thumb {
+                overflow: hidden;
+                width: 100%;
+                max-height: 100%;
+                margin: auto;
+            }
+
+            .vp-placeholder-thumb::before,
+            .vp-placeholder-thumb::after {
+                content: "";
+                display: block;
+                filter: blur(7px);
+                margin: 0;
+                background: url(https://i.vimeocdn.com/video/913899391-6e6ecf727e9d894186f13df86e20f623d25ad82017b7a1d396ccb6c0f27e0eb5-d?mw=80&q=85) 50% 50% / contain no-repeat;
+            }
+
+            .vp-placeholder-thumb::before {
+                margin: -30px;
+            }
+        </style>
+
+
+        <div class="vp-placeholder-thumb"></div>
+        <div class="vp-placeholder-carousel"></div>
+        <script>
+            function placeholderInit(t, h, d, s, n, o) {
+                var i = t.querySelector(".vp-placeholder"),
+                    v = t.querySelector(".vp-placeholder-thumb");
+                if (h) {
+                    var p = function() {
+                            try {
+                                return window.self !== window.top
+                            } catch (a) {
+                                return !0
+                            }
+                        }(),
+                        w = 200,
+                        y = 415,
+                        r = 60;
+                    if (!p && window.innerWidth >= w && window.innerWidth < y) {
+                        i.style.bottom = r + "px", i.style.maxHeight = "calc(100vh - " + r + "px)", i.style.maxWidth = "calc(" + n + " / " + o + " * (100vh - " + r + "px))";
+                        var f = t.querySelector(".vp-placeholder-carousel");
+                        f.style.display = "block"
+                    }
+                }
+                if (d) {
+                    var e = new Image;
+                    e.onload = function() {
+                        var a = n / o,
+                            c = e.width / e.height;
+                        if (c <= .95 * a || c >= 1.05 * a) {
+                            var l = i.getBoundingClientRect(),
+                                g = l.right - l.left,
+                                b = l.bottom - l.top,
+                                m = window.innerWidth / g * 100,
+                                x = window.innerHeight / b * 100;
+                            v.style.height = "calc(" + e.height + " / " + e.width + " * " + m + "vw)", v.style.maxWidth = "calc(" + e.width + " / " + e.height + " * " + x + "vh)"
+                        }
+                        i.style.visibility = "visible"
+                    }, e.src = s
+                } else i.style.visibility = "visible"
+            }
+        </script>
+        <script>
+            placeholderInit(document, false, true, "https://i.vimeocdn.com/video/913899391-6e6ecf727e9d894186f13df86e20f623d25ad82017b7a1d396ccb6c0f27e0eb5-d?mw=80\u0026q=85", 1920, 1080);
+        </script>
+    </div>
+
+    <div id="player" class="player"></div>
+    <script>
+        window.playerConfig = {
+            "cdn_url": "https://f.vimeocdn.com",
+            "vimeo_api_url": "api.vimeo.com",
+            "request": {
+                "files": {
+                    "dash": {
+                        "cdns": {
+                            "akfire_interconnect_quic": {
+                                "avc_url": "https://vod-adaptive-ak.vimeocdn.com/exp=1777063397~acl=%2Faafa2822-0ebf-4e8f-8990-791d5cdc61f7%2Fpsid%3D0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb%2F%2A~hmac=cabc7f0902fc2f21e2665d582b9adf9365e1085a47ea2f3ae455c5f057799ccb/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.json?omit=av1-hevc\u0026pathsig=8c953e4f~rbR6UvDDB0D9_9wY-Q8-lIpOhGCC4cHDzhZ_M-KWARc\u0026r=dXM%3D\u0026rh=2iUl8X",
+                                "origin": "gcs",
+                                "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1777063397~acl=%2Faafa2822-0ebf-4e8f-8990-791d5cdc61f7%2Fpsid%3D0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb%2F%2A~hmac=cabc7f0902fc2f21e2665d582b9adf9365e1085a47ea2f3ae455c5f057799ccb/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.json?pathsig=8c953e4f~rbR6UvDDB0D9_9wY-Q8-lIpOhGCC4cHDzhZ_M-KWARc\u0026r=dXM%3D\u0026rh=2iUl8X"
+                            },
+                            "fastly_skyfire": {
+                                "avc_url": "https://skyfire.vimeocdn.com/1777063397-0x30b458f28b12c7ecb37f3cf2d277eef25560a3bc/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.json?omit=av1-hevc\u0026pathsig=8c953e4f~rbR6UvDDB0D9_9wY-Q8-lIpOhGCC4cHDzhZ_M-KWARc\u0026r=dXM%3D\u0026rh=2iUl8X",
+                                "origin": "gcs",
+                                "url": "https://skyfire.vimeocdn.com/1777063397-0x30b458f28b12c7ecb37f3cf2d277eef25560a3bc/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.json?pathsig=8c953e4f~rbR6UvDDB0D9_9wY-Q8-lIpOhGCC4cHDzhZ_M-KWARc\u0026r=dXM%3D\u0026rh=2iUl8X"
+                            }
+                        },
+                        "default_cdn": "akfire_interconnect_quic",
+                        "separate_av": true,
+                        "streams": [{
+                            "profile": "139",
+                            "id": "69935e3c-47ae-4401-a3e6-28cac35dadd0",
+                            "fps": 29.98,
+                            "quality": "240p"
+                        }, {
+                            "profile": "165",
+                            "id": "8e37362f-f592-4323-b4e8-b9a087818a6d",
+                            "fps": 29.98,
+                            "quality": "540p"
+                        }, {
+                            "profile": "175",
+                            "id": "aedaa663-5cc8-45d4-a9bf-d713481d625e",
+                            "fps": 29.98,
+                            "quality": "1080p"
+                        }, {
+                            "profile": "164",
+                            "id": "b5d80026-78c4-4339-ab94-3df65d0ac80f",
+                            "fps": 29.98,
+                            "quality": "360p"
+                        }, {
+                            "profile": "174",
+                            "id": "2533c181-a105-42c5-aa75-89f2a0a4fe81",
+                            "fps": 29.98,
+                            "quality": "720p"
+                        }],
+                        "streams_avc": [{
+                            "profile": "139",
+                            "id": "69935e3c-47ae-4401-a3e6-28cac35dadd0",
+                            "fps": 29.98,
+                            "quality": "240p"
+                        }, {
+                            "profile": "165",
+                            "id": "8e37362f-f592-4323-b4e8-b9a087818a6d",
+                            "fps": 29.98,
+                            "quality": "540p"
+                        }, {
+                            "profile": "175",
+                            "id": "aedaa663-5cc8-45d4-a9bf-d713481d625e",
+                            "fps": 29.98,
+                            "quality": "1080p"
+                        }, {
+                            "profile": "164",
+                            "id": "b5d80026-78c4-4339-ab94-3df65d0ac80f",
+                            "fps": 29.98,
+                            "quality": "360p"
+                        }, {
+                            "profile": "174",
+                            "id": "2533c181-a105-42c5-aa75-89f2a0a4fe81",
+                            "fps": 29.98,
+                            "quality": "720p"
+                        }]
+                    },
+                    "hls": {
+                        "cdns": {
+                            "akfire_interconnect_quic": {
+                                "avc_url": "https://vod-adaptive-ak.vimeocdn.com/exp=1777063397~acl=%2Faafa2822-0ebf-4e8f-8990-791d5cdc61f7%2Fpsid%3D0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb%2F%2A~hmac=cabc7f0902fc2f21e2665d582b9adf9365e1085a47ea2f3ae455c5f057799ccb/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.m3u8?omit=av1-hevc-opus\u0026pathsig=8c953e4f~_IxfTJliIOxOU30qIVDwXqYVa23Va9T6WTboBp3RAFk\u0026r=dXM%3D\u0026rh=2iUl8X\u0026sf=fmp4",
+                                "origin": "gcs",
+                                "url": "https://vod-adaptive-ak.vimeocdn.com/exp=1777063397~acl=%2Faafa2822-0ebf-4e8f-8990-791d5cdc61f7%2Fpsid%3D0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb%2F%2A~hmac=cabc7f0902fc2f21e2665d582b9adf9365e1085a47ea2f3ae455c5f057799ccb/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.m3u8?omit=opus\u0026pathsig=8c953e4f~_IxfTJliIOxOU30qIVDwXqYVa23Va9T6WTboBp3RAFk\u0026r=dXM%3D\u0026rh=2iUl8X\u0026sf=fmp4"
+                            },
+                            "fastly_skyfire": {
+                                "avc_url": "https://skyfire.vimeocdn.com/1777063397-0x30b458f28b12c7ecb37f3cf2d277eef25560a3bc/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.m3u8?omit=av1-hevc-opus\u0026pathsig=8c953e4f~_IxfTJliIOxOU30qIVDwXqYVa23Va9T6WTboBp3RAFk\u0026r=dXM%3D\u0026rh=2iUl8X\u0026sf=fmp4",
+                                "origin": "gcs",
+                                "url": "https://skyfire.vimeocdn.com/1777063397-0x30b458f28b12c7ecb37f3cf2d277eef25560a3bc/aafa2822-0ebf-4e8f-8990-791d5cdc61f7/psid=0cc485c9e874cc139bacbbbfb2fcb713f60b2bcd8f1ec8277e6b2a8380d131cb/v2/playlist/av/primary/playlist.m3u8?omit=opus\u0026pathsig=8c953e4f~_IxfTJliIOxOU30qIVDwXqYVa23Va9T6WTboBp3RAFk\u0026r=dXM%3D\u0026rh=2iUl8X\u0026sf=fmp4"
+                            }
+                        },
+                        "default_cdn": "akfire_interconnect_quic",
+                        "separate_av": true
+                    }
+                },
+                "file_codecs": {
+                    "av1": [],
+                    "avc": ["69935e3c-47ae-4401-a3e6-28cac35dadd0", "8e37362f-f592-4323-b4e8-b9a087818a6d", "aedaa663-5cc8-45d4-a9bf-d713481d625e", "b5d80026-78c4-4339-ab94-3df65d0ac80f", "2533c181-a105-42c5-aa75-89f2a0a4fe81"],
+                    "hevc": {
+                        "dvh1": [],
+                        "hdr": [],
+                        "sdr": []
+                    }
+                },
+                "lang": "en",
+                "referrer": "https://www.bradley.com/",
+                "cookie_domain": ".vimeo.com",
+                "signature": "b73efd5e5be4c502fa7b2128e8148b93",
+                "timestamp": 1777059797,
+                "expires": 3600,
+                "thumb_preview": {
+                    "url": "https://videoapi-sprites.vimeocdn.com/video-sprites/image/e150b3e8-c0ba-4a04-993f-0472c86759f6.0.webp?ClientID=sulu\u0026Expires=1777062365\u0026Signature=0445313850a2f640a811450e0d59307276011c67",
+                    "height": 2880,
+                    "width": 4260,
+                    "frame_height": 240,
+                    "frame_width": 426,
+                    "columns": 10,
+                    "frames": 120
+                },
+                "currency": "USD",
+                "session": "43c482bdf6d74b4674528e663d13e2501e8efdcd1777059797",
+                "cookie": {
+                    "volume": 1,
+                    "quality": null,
+                    "hd": 0,
+                    "captions": null,
+                    "transcript": null,
+                    "captions_styles": {
+                        "color": null,
+                        "fontSize": null,
+                        "fontFamily": null,
+                        "fontOpacity": null,
+                        "bgOpacity": null,
+                        "windowColor": null,
+                        "windowOpacity": null,
+                        "bgColor": null,
+                        "edgeStyle": null
+                    },
+                    "audio_language": null,
+                    "audio_kind": null,
+                    "qoe_survey_vote": 0
+                },
+                "build": {
+                    "backend": "d86dfbb",
+                    "js": "4.46.43"
+                },
+                "urls": {
+                    "js": "https://f.vimeocdn.com/p/4.46.43/js/player.js",
+                    "js_base": "https://f.vimeocdn.com/p/4.46.43/js",
+                    "js_module": "https://f.vimeocdn.com/p/4.46.43/js/player.module.js",
+                    "js_vendor_module": "https://f.vimeocdn.com/p/4.46.43/js/vendor.module.js",
+                    "locales_js": {
+                        "de-DE": "https://f.vimeocdn.com/p/4.46.43/js/player.de-DE.js",
+                        "en": "https://f.vimeocdn.com/p/4.46.43/js/player.js",
+                        "es": "https://f.vimeocdn.com/p/4.46.43/js/player.es.js",
+                        "fr-FR": "https://f.vimeocdn.com/p/4.46.43/js/player.fr-FR.js",
+                        "ja-JP": "https://f.vimeocdn.com/p/4.46.43/js/player.ja-JP.js",
+                        "ko-KR": "https://f.vimeocdn.com/p/4.46.43/js/player.ko-KR.js",
+                        "pt-BR": "https://f.vimeocdn.com/p/4.46.43/js/player.pt-BR.js",
+                        "zh-CN": "https://f.vimeocdn.com/p/4.46.43/js/player.zh-CN.js"
+                    },
+                    "ambisonics_js": "https://f.vimeocdn.com/p/external/ambisonics.min.js",
+                    "barebone_js": "https://f.vimeocdn.com/p/4.46.43/js/barebone.js",
+                    "chromeless_js": "https://f.vimeocdn.com/p/4.46.43/js/chromeless.js",
+                    "three_js": "https://f.vimeocdn.com/p/external/three.rvimeo.min.js",
+                    "hive_sdk": "https://f.vimeocdn.com/p/external/hive-sdk.js",
+                    "hive_interceptor": "https://f.vimeocdn.com/p/external/hive-interceptor.js",
+                    "proxy": "https://player.vimeo.com/static/proxy.html",
+                    "css": "https://f.vimeocdn.com/p/4.46.43/css/player.css",
+                    "chromeless_css": "https://f.vimeocdn.com/p/4.46.43/css/chromeless.css",
+                    "fresnel": "https://arclight.vimeo.com/add/player-stats",
+                    "player_telemetry_url": "https://arclight.vimeo.com/player-events",
+                    "telemetry_base": "https://lensflare.vimeo.com"
+                },
+                "flags": {
+                    "plays": 1,
+                    "dnt": 1,
+                    "autohide_controls": 0,
+                    "preload_video": "metadata_on_hover",
+                    "qoe_survey_forced": 0,
+                    "ai_widget": 0,
+                    "ecdn_delta_updates": 0,
+                    "disable_mms": 0,
+                    "check_clip_skipping_forward": 0,
+                    "disable_orion_standalone": 0,
+                    "disable_picox_standalone": 0,
+                    "picox_sampling": {
+                        "core_sample_rate": 30,
+                        "fake_door_sample_rate": 100
+                    },
+                    "orion_rollout_percentage": 100
+                },
+                "country": "PH",
+                "client": {
+                    "ip": "112.207.165.154"
+                },
+                "ab_tests": {
+                    "cross_origin_texttracks": {
+                        "group": "variant",
+                        "track": false,
+                        "data": null
+                    },
+                    "scrub_playback_strategy": {
+                        "group": "control",
+                        "track": true,
+                        "data": null
+                    }
+                },
+                "atid": "2487076538.1777059797",
+                "ai_widget_signature": "056842c27b19530c6325028133886ccf7a104806e328b658898149c4ebd3fb4a_1777063397",
+                "config_refresh_url": "https://player.vimeo.com/video/432206826/config/request?atid=2487076538.1777059797\u0026expires=3600\u0026referrer=https%3A%2F%2Fwww.bradley.com%2F\u0026session=43c482bdf6d74b4674528e663d13e2501e8efdcd1777059797\u0026signature=b73efd5e5be4c502fa7b2128e8148b93\u0026time=1777059797\u0026v=1"
+            },
+            "player_url": "player.vimeo.com",
+            "video": {
+                "id": 432206826,
+                "title": "Bradley's 150th Anniversary: Celebrating the Past, Focusing on the Future",
+                "width": 1920,
+                "height": 1080,
+                "duration": 353,
+                "url": "https://vimeo.com/432206826",
+                "share_url": "https://vimeo.com/432206826",
+                "embed_code": "\u003ciframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/432206826?h=5b26714e35\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen\u003e\u003c/iframe\u003e",
+                "default_to_hd": 0,
+                "privacy": "anybody",
+                "embed_permission": "public",
+                "thumbnail_url": "https://i.vimeocdn.com/video/913899391-6e6ecf727e9d894186f13df86e20f623d25ad82017b7a1d396ccb6c0f27e0eb5-d",
+                "owner": {
+                    "id": 45446134,
+                    "name": "Bradley Arant Boult Cummings LLP",
+                    "img": "https://i.vimeocdn.com/portrait/19692530_60x60?sig=a8c19718821547dfe5e3d92d822caeda1a8e2fe5bc9d9e7b272cbdb3e7a0bfc9\u0026v=1\u0026region=us",
+                    "img_2x": "https://i.vimeocdn.com/portrait/19692530_60x60?sig=a8c19718821547dfe5e3d92d822caeda1a8e2fe5bc9d9e7b272cbdb3e7a0bfc9\u0026v=1\u0026region=us",
+                    "url": "https://vimeo.com/bradleylegal",
+                    "account_type": "pro"
+                },
+                "spatial": 0,
+                "live_event": null,
+                "version": {
+                    "current": null,
+                    "available": [{
+                        "id": 688814113,
+                        "file_id": 1880007526,
+                        "is_current": true
+                    }]
+                },
+                "unlisted_hash": null,
+                "rating": {
+                    "id": 6
+                },
+                "fps": 29.98,
+                "channel_layout": "stereo",
+                "ai": 0,
+                "locale": ""
+            },
+            "user": {
+                "id": 0,
+                "team_id": 0,
+                "team_origin_user_id": 0,
+                "account_type": "none",
+                "liked": 0,
+                "watch_later": 0,
+                "owner": 0,
+                "mod": 0,
+                "logged_in": 0,
+                "private_mode_enabled": 0,
+                "vimeo_api_client_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2lkIjoiNDNjNDgyYmRmNmQ3NGI0Njc0NTI4ZTY2M2QxM2UyNTAxZThlZmRjZDE3NzcwNTk3OTciLCJleHAiOjE3NzcwNjMzOTcsImFwcF9pZCI6MTE4MzU5LCJzY29wZXMiOiJwdWJsaWMgc3RhdHMifQ.DdqvsdE5DI24I7GLOMKerK-N2W4EcKAmQlA4CH8_A_g"
+            },
+            "view": 1,
+            "vimeo_url": "vimeo.com",
+            "embed": {
+                "audio_track": "",
+                "autoplay": 0,
+                "autopause": 1,
+                "dnt": 1,
+                "editor": 0,
+                "keyboard": 1,
+                "log_plays": 1,
+                "loop": 0,
+                "muted": 0,
+                "on_site": 0,
+                "texttrack": "",
+                "transparent": 1,
+                "outro": "videos",
+                "playsinline": 1,
+                "quality": null,
+                "player_id": "",
+                "api": null,
+                "app_id": "",
+                "color": "00adef",
+                "color_one": "000000",
+                "color_two": "00adef",
+                "color_three": "ffffff",
+                "color_four": "000000",
+                "context": "embed.main",
+                "settings": {
+                    "auto_pip": 1,
+                    "badge": 0,
+                    "byline": 1,
+                    "collections": 0,
+                    "color": 0,
+                    "force_color_one": 0,
+                    "force_color_two": 0,
+                    "force_color_three": 0,
+                    "force_color_four": 0,
+                    "embed": 1,
+                    "fullscreen": 1,
+                    "like": 1,
+                    "logo": 1,
+                    "playbar": 1,
+                    "portrait": 1,
+                    "pip": 1,
+                    "share": 1,
+                    "spatial_compass": 0,
+                    "spatial_label": 0,
+                    "speed": 1,
+                    "title": 1,
+                    "volume": 1,
+                    "watch_later": 1,
+                    "watch_full_video": 1,
+                    "controls": 1,
+                    "airplay": 1,
+                    "audio_tracks": 1,
+                    "chapters": 1,
+                    "chromecast": 1,
+                    "cc": 1,
+                    "transcript": 1,
+                    "quality": 1,
+                    "play_button_position": 0,
+                    "ask_ai": 0,
+                    "skipping_forward": 1,
+                    "debug_payload_collection_policy": "default"
+                },
+                "create_interactive": {
+                    "has_create_interactive": false,
+                    "viddata_url": ""
+                },
+                "min_quality": null,
+                "max_quality": null,
+                "initial_quality": null,
+                "prefer_mms": 1
+            }
+        }
+    </script>
+    <script>
+        const fullscreenSupported = "exitFullscreen" in document || "webkitExitFullscreen" in document || "webkitCancelFullScreen" in document || "mozCancelFullScreen" in document || "msExitFullscreen" in document || "webkitEnterFullScreen" in document.createElement("video");
+        var isIE = checkIE(window.navigator.userAgent),
+            incompatibleBrowser = !fullscreenSupported || isIE;
+        window.noModuleLoading = !1, window.dynamicImportSupported = !1, window.cssLayersSupported = typeof CSSLayerBlockRule < "u", window.isInIFrame = function() {
+            try {
+                return window.self !== window.top
+            } catch (e) {
+                return !0
+            }
+        }(), !window.isInIFrame && /twitter/i.test(navigator.userAgent) && window.playerConfig.video.url && (window.location = window.playerConfig.video.url), window.playerConfig.request.lang && document.documentElement.setAttribute("lang", window.playerConfig.request.lang), window.loadScript = function(e) {
+            var n = document.getElementsByTagName("script")[0];
+            n && n.parentNode ? n.parentNode.insertBefore(e, n) : document.head.appendChild(e)
+        }, window.loadVUID = function() {
+            if (!window.playerConfig.request.flags.dnt && !window.playerConfig.embed.dnt) {
+                window._vuid = [
+                    ["pid", window.playerConfig.request.session]
+                ];
+                var e = document.createElement("script");
+                e.async = !0, e.src = window.playerConfig.request.urls.vuid_js, window.loadScript(e)
+            }
+        }, window.loadCSS = function(e, n) {
+            var i = {
+                cssDone: !1,
+                startTime: new Date().getTime(),
+                link: e.createElement("link")
+            };
+            return i.link.rel = "stylesheet", i.link.href = n, e.getElementsByTagName("head")[0].appendChild(i.link), i.link.onload = function() {
+                i.cssDone = !0
+            }, i
+        }, window.loadLegacyJS = function(e, n) {
+            if (incompatibleBrowser) {
+                var i = e.querySelector(".vp-placeholder");
+                i && i.parentNode && i.parentNode.removeChild(i);
+                let a = `/video/${window.playerConfig.video.id}/fallback`;
+                window.playerConfig.request.referrer && (a += `?referrer=${window.playerConfig.request.referrer}`), n.innerHTML = `<div class="fallback"><iframe title="unsupported message" src="${a}" frameborder="0"></iframe></div>`
+            } else {
+                n.className = "player loading";
+                var t = window.loadCSS(e, window.playerConfig.request.urls.css),
+                    r = e.createElement("script"),
+                    o = !1;
+                r.src = window.playerConfig.request.urls.js, window.loadScript(r), r["onreadystatechange" in r ? "onreadystatechange" : "onload"] = function() {
+                    !o && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") && (o = !0, playerObject = new VimeoPlayer(n, window.playerConfig, t.cssDone || {
+                        link: t.link,
+                        startTime: t.startTime
+                    }))
+                }, window.loadVUID()
+            }
+        };
+
+        function checkIE(e) {
+            e = e && e.toLowerCase ? e.toLowerCase() : "";
+
+            function n(r) {
+                return r = r.toLowerCase(), new RegExp(r).test(e);
+                return browserRegEx
+            }
+            var i = n("msie") ? parseFloat(e.replace(/^.*msie (\d+).*$/, "$1")) : !1,
+                t = n("trident") ? parseFloat(e.replace(/^.*trident\/(\d+)\.(\d+).*$/, "$1.$2")) + 4 : !1;
+            return i || t
+        }
+    </script>
+    <script nomodule>
+        window.noModuleLoading = true;
+        var playerEl = document.getElementById('player');
+        window.loadLegacyJS(document, playerEl);
+    </script>
+    <script type="module">try{import("").catch(()=>{})}catch(t){}window.dynamicImportSupported=!0;
+    </script>
+    <script type="module">if(!window.dynamicImportSupported||!window.cssLayersSupported){if(!window.noModuleLoading){window.noModuleLoading=!0;var playerEl=document.getElementById("player");window.loadLegacyJS(document,playerEl)}var moduleScriptLoader=document.getElementById("js-module-block");moduleScriptLoader&&moduleScriptLoader.parentElement.removeChild(moduleScriptLoader)}
+    </script>
+    <script type="module" id="js-module-block">if(!window.noModuleLoading&&window.dynamicImportSupported&&window.cssLayersSupported){const n=document.getElementById("player"),e=window.loadCSS(document,window.playerConfig.request.urls.css);import(window.playerConfig.request.urls.js_module).then(function(o){new
+        o.VimeoPlayer(n,window.playerConfig,e.cssDone||{link:e.link,startTime:e.startTime}),window.loadVUID()}).catch(function(o){throw/TypeError:[A-z ]+import[A-z ]+module/gi.test(o)&&window.loadLegacyJS(document,n),o})}
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "embedUrl": "https://player.vimeo.com/video/432206826?h=5b26714e35",
+            "thumbnailUrl": "https://i.vimeocdn.com/video/913899391-6e6ecf727e9d894186f13df86e20f623d25ad82017b7a1d396ccb6c0f27e0eb5-d?f=webp",
+            "name": "Bradley's 150th Anniversary: Celebrating the Past, Focusing on the Future",
+            "description": "This is \"Bradley's 150th Anniversary: Celebrating the Past, Focusing on the Future\" by \"Bradley Arant Boult Cummings LLP\" on Vimeo, the home for high quality videos and the people who love them.",
+            "duration": "PT353S",
+            "uploadDate": "2020-06-24T12:06:57-04:00",
+            "@context": "https://schema.org/",
+            "@type": "VideoObject"
+        }
+    </script>
+
+</body>
+
+</html>
